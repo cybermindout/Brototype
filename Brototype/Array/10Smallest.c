@@ -7,8 +7,8 @@ int main() {
     for (i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
-    l1 = 0;
-    l2 = 0;
+    l1 = 1000;
+    l2 = 1000;
     for (i = 0; i < n; i++) {
         if (a[i] < l1) {
             l2 = l1;
