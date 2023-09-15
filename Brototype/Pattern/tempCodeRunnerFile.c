@@ -1,12 +1,23 @@
 #include<stdio.h>
-int main()
+int main() 
 {
-    int i,j,k=0;
-    for(i=1;i<=4;i++)
+    int i,j,k;
+    for(i=1;i<=6;i++)
     {
-      for(j=1;j<=5;j++)
+      k=1;
+      for(j=1;j<=11;j++)
       {
-      printf("%d",(k++)%2);
+        if(j==7-i || j==5+i)
+        {    
+      printf("*");
+        }
+      else if(j%2!=0 && i==6)
+      {
+        printf("*");
+      }
+      else
+      printf(" ");
+
     }
     printf("\n");
     }
