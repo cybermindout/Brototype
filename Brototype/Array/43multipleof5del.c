@@ -1,8 +1,7 @@
 #include<stdio.h>
-#include<limits.h>
 int main()
 {
-    int a[100],i,j,n,freq[100],x=0;
+    int a[100],i,j,n,x=0;
     printf("enter the number\n");
     scanf("%d",&n);
      
