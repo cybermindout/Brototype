@@ -13,8 +13,7 @@ int main(){
         a[i]=a[j];
         a[j]=temp;
     }
-    printf("the reversed array elements are:");
     for(i=0;i<n;i++){
-        printf("%d\t",a[i]);
+        printf("%d\n",a[i]);
     }
 }

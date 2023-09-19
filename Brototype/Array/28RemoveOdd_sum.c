@@ -8,7 +8,7 @@ int main(){
     scanf("%d",&a[i]);
     }
    for(i=0;i<n;i++){
-    if(a[i]%2!=0){
+    if(a[i]%2==0){
         a[x]=a[i];
         x++;
     }
