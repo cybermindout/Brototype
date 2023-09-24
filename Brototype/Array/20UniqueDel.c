@@ -16,6 +16,7 @@ int main() {
             x++;
         }
     }
+    
     printf("after deleting unique elemnts :\n");
     for (i=0;i<x;i++){
         printf("%d\n",a[i]);

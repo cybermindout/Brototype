@@ -1,27 +1,34 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main()
 {
-    int a[100],i,n,sum=0,j=0,temp;
-    printf("enter the size array :");
+    int i,j,n;
+    printf("Enter array size\n");
     scanf("%d",&n);
-
-    printf("enter the array elements :");
+    int a[n];
+    printf("Enter the elements in array\n");
     for(i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    for(i=0;i<n;i++){
-        if(a[i]<0){
-        temp=a[j];
-        a[j]=a[i];
-        a[i]=temp;
-        
-       // sum+=a[i];
-       }
-        j++;
-    }
-  //  printf("\n sum= %d",sum);
-printf("negtive moved to begining \n");
-    for(i=0;i<n+1;i++)
     
-    printf("%d\n",a[i]);
+    
+    for(i=0;i<n;i++){
+        if(a[i]==0){
+           for(j=n-1;j>=0;j--){
+            a[j+1]=a[j];
+            
+        } 
+        a[0]=a[i+1];
+        for(j=i+1;j<=n;j++){
+            a[j]=a[j+1];
+        }
+        }
+        
+    }printf("\n\n");
+    
+    for(i=0;i<n;i++){
+        printf("%d\n",a[i]);
     }
+
+    return 0;
+}

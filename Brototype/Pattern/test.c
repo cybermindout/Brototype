@@ -5,7 +5,7 @@ int i=1;
 while(i<=3)
 {
     printf("hey there\n");
-
+break;
     i++;
 }
 }

@@ -36,7 +36,6 @@ int main() {
     }
 
     printf("Sum: %d\n", sum);
-
     for (i = 0; i < n; i++) {
         printf("%d\n", a[i]);
     }
